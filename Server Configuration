@@ -1,0 +1,21 @@
+Stop Server :
+launchctl unload -w ~/Library/LaunchAgents/com.school2.laravel.serve.plist
+Start Server :
+launchctl load -w ~/Library/LaunchAgents/com.school2.laravel.serve.plist
+
+
+open -a "Google Chrome" "http://127.0.0.1:8001/admin/dashboard"
+
+
+Using Valet Server this command and using the sudo befor each commande
+
+brew services start php
+brew services start dnsmasq
+brew services start nginx
+
+brew services stop nginx
+brew services stop dnsmasq
+brew services stop php
+
+
+brew services list
